@@ -1,5 +1,5 @@
 // Keep your working variable
-var test_var = "hello";
+var test_var = "hello ddddddd";
 
 // Option A: Write the function as a var expression (forces it global)
 var testFunction = function() {
