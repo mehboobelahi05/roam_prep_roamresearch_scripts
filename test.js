@@ -1,7 +1,15 @@
-window.test_var = "hello from github";
+// Keep your working variable
+var test_var = "hello";
 
-window.testFunction = function() {
-    console.log("SUCCESS: The test function is running perfectly!");
+// Option A: Write the function as a var expression (forces it global)
+var testFunction = function() {
+    console.log("This is a test function working via var!");
 };
 
-console.log("GitHub script has successfully loaded into the page.");
+// Option B: Explicitly attach it to the window object (bulletproof backup)
+window.testFunctionBackup = function() {
+    console.log("This is the backup function working via window!");
+};
+
+// Add this line so you can see in real-time when the script refreshes
+console.log("Script updated and loaded perfectly!");
