@@ -1,1 +1,1 @@
-var hello = "hello";
+var test_var = "hello";
