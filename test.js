@@ -1,7 +1,7 @@
-// A global variable
-var test_var = "hello";
+window.test_var = "hello from github";
 
-// Changing this to a variable expression attaches it to the global scope reliably
 window.testFunction = function() {
-    console.log("This is a test function");
+    console.log("SUCCESS: The test function is running perfectly!");
 };
+
+console.log("GitHub script has successfully loaded into the page.");
