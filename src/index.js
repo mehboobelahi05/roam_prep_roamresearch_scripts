@@ -1,12 +1,30 @@
-import { testFunction, test_var, elahi } from './test.js';
-import { abcFunction } from './abc.js';
+import * as state from './state.js';
+import * as roam from './roamFunctions.js';
+import * as helpers from './generalComponents.js';
+import * as mcqs from './mcqs.js';
+import * as mocks from './mocks.js';
+import * as config from './appConfig.js';
+import * as git from './addDataToGithub.js';
+import { loadData } from './data.js';
 
-// Bundle everything into a single global namespace for Roam
+// Bundle everything seamlessly under a single safe Global Object
 window.RoamPrep = {
-    test_var: test_var,
-    testFunction: testFunction,
-    abcFunction: abcFunction,
-    elahi: elahi
+    // Global Constants / State Objects
+    state: state,
+    allData: state.allData,
+    blockUids: state.blockUids,
+    
+    // Structural Methods 
+    loadData: loadData,
+    getMcqs: mcqs.getMcqs,
+    loadMockTests: mocks.loadMockTests,
+    loadAppConfigData: config.loadAppConfigData,
+    addDataToGitHub: git.addDataToGitHub,
+    
+    // Core API Helpers 
+    getBlockInfo: roam.getBlockInfo,
+    createBlock: roam.createBlock,
+    getMCQById: helpers.getMCQById
 };
 
-console.log("🚀 Roam Prep Project Engine fully loaded!");
+console.log("✨ Roam Prep Core Engine Module Project Bundled Successfully!");
