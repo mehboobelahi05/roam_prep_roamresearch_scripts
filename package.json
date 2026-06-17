@@ -4,9 +4,9 @@
   "description": "",
   "main": "abc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/index.js --bundle --minify --outfile=bundle.js"
-  },
+  "bundle": "esbuild src/index.js --bundle --minify --outfile=bundle.js",
+  "build": "npm run bundle && git add . && git commit -m \"Auto-update bundle\" && git push origin main"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mehboobelahi05/roam_prep_roamresearch_scripts.git"
