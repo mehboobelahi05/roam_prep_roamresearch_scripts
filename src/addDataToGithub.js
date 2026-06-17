@@ -1,7 +1,6 @@
 import { allData, uploadConfig, uploadAllData } from './state.js';
 
 const GITHUB_CONFIG = {
-    token: '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',
     owner: 'mehboobelahi05',
     repo: 'roamprepmobile',
     branch: 'main'
