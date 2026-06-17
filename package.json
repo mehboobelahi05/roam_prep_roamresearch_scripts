@@ -1,0 +1,25 @@
+{
+  "name": "roam_prep_roamresearch_scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "abc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.js --bundle --minify --outfile=bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehboobelahi05/roam_prep_roamresearch_scripts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mehboobelahi05/roam_prep_roamresearch_scripts/issues"
+  },
+  "homepage": "https://github.com/mehboobelahi05/roam_prep_roamresearch_scripts#readme",
+  "dependencies": {
+    "esbuild": "0.28.1"
+  }
+}
