@@ -6,6 +6,9 @@ var testFunction = function() {
     console.log("This is a test function working via var!");
 };
 
+function tempFun () {
+    console.log("This is a temp function working via var!");
+};
 // Option B: Explicitly attach it to the window object (bulletproof backup)
 window.testFunctionBackup = function() {
     console.log("This is the backup function working via window!");
